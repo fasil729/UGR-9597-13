@@ -1,0 +1,18 @@
+.header {
+    background: url("../images/dankil2.jpg") no-repeat ;
+    background-size: 100% 100%;
+}
+
+.main_section1_catagories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: fit-content;
+    flex-wrap: wrap;
+    
+
+}
+.main_section1--float-left {
+    float: left;
+}

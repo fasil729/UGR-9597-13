@@ -6,28 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cultural events</title>
     <link rel="icon" href="images/flag.png" type="image/png" />
-    <style>
-
-
-    </style>
+     <link rel="stylesheet" href="css/all.css">
+     <link rel="stylesheet" href="css/cultural.css">
+     <script dref src="js/index.js"></script>
   </head>
   <body>
     <header class="header">
-      <img src="images/logo.jpg" alt="logo of the website" width="50px" />
+      <div class="header_box1">
+        <img class="header_box1_logo" src="images/logo.jpg" alt="logo of the website" width="50px" />
+        <h2 style="padding:0px;margin:0px;">Melskel at meskel Square</h2>
+      </div>
       <nav>
         <ul>
           <li>
             <a href="home.html">HOME</a>
           </li>
-          <li>
-            <span>CATAGORY</span>
-            <span class="dd-arrow"></span>
-            <ul>
+
               <li><a href="cultural.html">CULATUAL EVENTS</a></li>
               <li><a href="heritage.html">HERITAGES</a></li>
               <li><a href="natural.html">NATURAL RESOURCES</a></li>
-            </ul>
-          </li>
+
           <li>
             <a href="tour_operators.html">CONTACT TOUR OPERATORS</a>
           </li>
@@ -38,19 +36,20 @@
             <a href="about_us.html">ABOUT US</a>
           </li>
         </ul>
+        <div class="toggler-bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
       </nav>
-      <figure>
-        <img src="images/meskel2.jfif" alt="buetifull meskel ceremony" class="back">
-        <figcaption><h2>Melskel at meskel Square</h2></figcaption>
-      </figure>
-      <h1>Cultural events in Ethiopia</h1>
     </header>
-    <main>
-        <section >
+    <main class="main">
+        <section class="main_section1">
+            <h1 style="padding:0px;margin:0px;">Cultural events in Ethiopia</h1>
             <h2>Upcoming popular Events</h2>
             <p>there is fantastic events and festivals soon <b>Don't Miss Them!!!</b></p>
-            <div class="event_videos">
-                <div class="frist">
+            <div class="main_section1_video">
+                <div class="main_section1_video_first">
                   <video width="35%" height="45%" autoplay controls muted loop>
                     <source src="videos/meskel.mp4">
                     Your browser does not support video !!!
@@ -69,7 +68,7 @@
               </article>
                 </div>
 
-                <div class="second">
+                <div class="main_section1_video_second">
                   <video autoplay width="35%" height="45%" autoplay controls muted loop>
                     <source src="videos/enkutatash.mp4">
                     your browser does not support video !!!
@@ -91,7 +90,7 @@
                 </div>
             </div>
         </section>
-        <aside>
+        <aside class="main_aside">
           <div class="popular_lyrics">
             <h3>Popular Lyrics</h3>
             <h4>national anthem</h4>
@@ -114,12 +113,12 @@
             </audio>
           </div>
         </aside>
-        <section >
+        <section class="main_section2">
           <h2>See Ethiopian beutiful cultures</h2>
           <p>Ethiopians are rich of cultural events and beutifull festivals</p>
-            <div class="more_events">
-                <div class="frist">
-                  <video width="35%" height="45%" autoplay controls muted loop>
+            <div class="main_section2_video">
+                <div class="main_section2_video_first">
+                  <video width="40%" height="45%" autoplay controls muted loop>
                     <source src="videos/timket.mp4">
                     Your browser does not support video !!!
                 </video>
@@ -140,7 +139,7 @@
 
               </div>
 
-                <div class="second">
+                <div class="main_section2_video_second">
                   <video autoplay width="35%" height="45%" autoplay controls muted loop>
                     <source src="videos/gena.mp4">
                     your browser does not support video !!!
@@ -166,7 +165,7 @@
 
                   </article>
                 </div>
-                <div class="third">
+                <div class="main_section2_video_third">
                   <video autoplay width="35%" height="45%" autoplay controls muted loop>
                     <source src="videos/fitche.mp4">
                     your browser does not support video !!!
@@ -188,23 +187,23 @@
               </div>
       </section>
     </main>
-    <footer>
-      <img
+    <footer class="footer">
+      <div class="footer_contact">
+        <img class="footer_logo"
         src="images/logo.jpg"
         alt="visit Ethiopia land of orgin"
         width="50px"
       />
-      <div class="contact">
-        <h3>contact</h3>
-        <span><img src="images/phone.png" alt="phone icon" width="15px">
+        <p>Contact</p>
+        <span><img src="images/phone.png" alt="phone icon" width="15px" style="padding-right: 10px;">
             <a href="tel:+251937070916" style="display:inline-block;">+251937070916</a></span>
         <br>
-        <span><img src="images/mail_icon.png" alt="email icon" width="15px">
+        <span><img src="images/mail_icon.png" alt="email icon" width="15px" style="padding-right: 10px;">
             <a href="mailto:fasikafikadu38@gmail.com">fasikafikadu38@gmail.com</a>
         </span>
 
       </div>
-      <div class="center">
+      <div class="footer_center">
         <ul>
           <li><p>Catagories</p></li>
           <ul>
@@ -221,7 +220,7 @@
         </ul>
       </div>
 
-      <div class="right">
+      <div class="footer_right">
         <ul>
           <li>To Plan Your tour</li>
           <ul>
@@ -233,10 +232,10 @@
           </ul>
         </ul>
       </div>
-
-    <div class="privacy">
+      <div class="footer_privacy">
         <p>&copy Ethiotour Company</p>
     </div>
     </footer>
+
   </body>
 </html>

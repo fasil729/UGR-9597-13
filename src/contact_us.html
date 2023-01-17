@@ -6,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACT US</title>
     <link rel="icon" href="images/flag.png" type="image/png" />
-    <style>
-
-
-    </style>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script dref src="js/index.js"></script>
   </head>
   <body>
     <header class="header">
-      <img src="images/logo.jpg" alt="logo of the website" width="50px" />
+      <div class="header_box1">
+        <img class="header_box1_logo" src="images/logo.jpg" alt="logo of the website" width="50px" />
+        <h2 style="padding:0px;margin:0px;">Timket Ceremony</h2>
+      </div>
       <nav>
         <ul>
           <li>
             <a href="home.html">HOME</a>
           </li>
-          <li>
-            <span>CATAGORY</span>
-            <span class="dd-arrow"></span>
-            <ul>
               <li><a href="cultural.html">CULATUAL EVENTS</a></li>
               <li><a href="heritage.html">HERITAGES</a></li>
               <li><a href="natural.html">NATURAL RESOURCES</a></li>
-            </ul>
-          </li>
           <li>
             <a href="tour_operators.html">CONTACT TOUR OPERATORS</a>
           </li>
@@ -38,57 +34,61 @@
             <a href="about_us.html">ABOUT US</a>
           </li>
         </ul>
+        <div class="toggler-bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
       </nav>
-      <figure>
-        <img src="images/Timket.jpg" alt="Timket in ethiopia" class="back">
-        <figcaption><h2>Timket</h2></figcaption>
-      </figure>
-      <h1>CONTACT US</h1>
     </header>
-    <main>
-        <section>
-          <P>This page is use to reach us with your fedback and messages.
-            that helps us in imporiving the quality and quantity of our services.
+    <main class="main">
+        <section class="main_section">
+          <div class="main_section_message">
+            <h1>CONTACT US</h1>
+            <P>This page is use to reach us with your fedback and messages.
+              that helps us in imporiving the quality and quantity of our services.
+              <br>
+              <i>Thank You!!! for you Messages.</i>
+            </P>
+          </div>
+          <form class="main_section_form" onsubmit="return validateForm()" id="form" method="post" encoding="text/plain">
+            <label for="first_name">first_Name*</label>
             <br>
-            <i>Thank You!!! for you Messages.</i>
-          </P>
-          <form action="mailto:fasikafikadu38@gmail.com" method="post" encoding="text/plain">
-            <label for="first_name">Frist Name*</label>
-            <input type="text" id="first_name" name="frist_name" placeholder="Enter your name" required>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter your name" >
+            <label for="second_name">Second_Name</label>
             <br>
-            <label for="second_name">Second Name</label>
             <input type="text" id="second_name" name="second_name" placeholder="Enter your Second name">
-            <br>
             <label for="email">Email*</label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+            <input type="text" id="email" name="email" placeholder="Email">
             <br>
             <label for="message">Your Message</label>
             <br>
             <textarea name="message" id="message" cols="30" rows="10">write your message here</textarea>
+            </div>
             <br>
-            <input type="submit" value="submit">
-
+            <input type="submit", value="submit", name="submit">
+            <span id="form-error"></span>
           </form>
         </section>
-
     </main>
-    <footer>
-      <img
+    <footer class="footer">
+      <div class="footer_contact">
+        <img class="footer_logo"
         src="images/logo.jpg"
         alt="visit Ethiopia land of orgin"
         width="50px"
       />
-      <div class="contact">
-        <h2>contact</h2>
-        <span><img src="images/phone.png" alt="phone icon" width="15px">
+        <p>Contact</p>
+        <span><img src="images/phone.png" alt="phone icon" width="15px" style="padding-right: 10px;">
             <a href="tel:+251937070916" style="display:inline-block;">+251937070916</a></span>
         <br>
-        <span><img src="images/mail_icon.png" alt="email icon" width="15px">
+        <span><img src="images/mail_icon.png" alt="email icon" width="15px" style="padding-right: 10px;">
             <a href="mailto:fasikafikadu38@gmail.com">fasikafikadu38@gmail.com</a>
         </span>
 
       </div>
-      <div class="center">
+      <div class="footer_center">
         <ul>
           <li><p>Catagories</p></li>
           <ul>
@@ -105,7 +105,7 @@
         </ul>
       </div>
 
-      <div class="right">
+      <div class="footer_right">
         <ul>
           <li>To Plan Your tour</li>
           <ul>
@@ -117,10 +117,11 @@
           </ul>
         </ul>
       </div>
-
-    <div class="privacy">
+      <div class="footer_privacy">
         <p>&copy Ethiotour Company</p>
     </div>
+
     </footer>
+
   </body>
 </html>

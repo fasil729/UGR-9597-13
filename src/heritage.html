@@ -6,28 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heritages in Ethiopia</title>
     <link rel="icon" href="images/flag.png" type="image/png" />
-    <style>
-
-
-    </style>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/heritage.css">
+    <script dref src="js/index.js"></script>
   </head>
   <body>
     <header class="header">
-      <img src="images/logo.jpg" alt="logo of the website" width="50px" />
+      <div class="header_box1">
+        <img class="header_box1_logo"src="images/logo.jpg" alt="logo of the website" width="50px" />
+        <h2 style="padding:0px;margin:0px;">Gonder Palaces</h2>
+      </div>
       <nav>
         <ul>
           <li>
             <a href="home.html">HOME</a>
           </li>
-          <li>
-            <span>CATAGORY</span>
-            <span class="dd-arrow"></span>
-            <ul>
+
               <li><a href="cultural.html">CULATUAL EVENTS</a></li>
               <li><a href="heritage.html">HERITAGES</a></li>
               <li><a href="natural.html">NATURAL RESOURCES</a></li>
-            </ul>
-          </li>
+
           <li>
             <a href="tour_operators.html">CONTACT TOUR OPERATORS</a>
           </li>
@@ -38,15 +36,17 @@
             <a href="about_us.html">ABOUT US</a>
           </li>
         </ul>
+        <div class="toggler-bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
       </nav>
-      <figure>
-        <img src="images/gonder.jpg" alt="fasiladas palace at gonder" class="back">
-        <figcaption><h2>Gonder palace</h2></figcaption>
-      </figure>
-      <h1>Heritages in Ethiopia</h1>
+
     </header>
-    <main>
-        <section >
+    <main class="main">
+      <section class="main_section1">
+            <h1>Heritages in Ethiopia</h1>
             <h2>Heritages to see</h2>
             <div class="heritages">
                 <div class="frist">
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </section>
-        <aside>
+        <aside class="main_aside">
           <div class="some_lyrics">
             <h3>some Lyrics</h3>
             <h4>Axum</h4>
@@ -135,7 +135,7 @@
 
           </div>
         </aside>
-        <section >
+        <section class="main_section2">
           <h2>Museums in Addis Ababa</h2>
            <table>
             <thead>
@@ -202,23 +202,23 @@
            </table>
       </section>
     </main>
-    <footer>
-      <img
+    <footer class="footer">
+      <div class="footer_contact">
+        <img class="footer_logo"
         src="images/logo.jpg"
         alt="visit Ethiopia land of orgin"
         width="50px"
       />
-      <div class="contact">
-        <h3>contact</h3>
-        <span><img src="images/phone.png" alt="phone icon" width="15px">
+        <p>Contact</p>
+        <span><img src="images/phone.png" alt="phone icon" width="15px" style="padding-right: 10px;">
             <a href="tel:+251937070916" style="display:inline-block;">+251937070916</a></span>
         <br>
-        <span><img src="images/mail_icon.png" alt="email icon" width="15px">
+        <span><img src="images/mail_icon.png" alt="email icon" width="15px" style="padding-right: 10px;">
             <a href="mailto:fasikafikadu38@gmail.com">fasikafikadu38@gmail.com</a>
         </span>
 
       </div>
-      <div class="center">
+      <div class="footer_center">
         <ul>
           <li><p>Catagories</p></li>
           <ul>
@@ -235,7 +235,7 @@
         </ul>
       </div>
 
-      <div class="right">
+      <div class="footer_right">
         <ul>
           <li>To Plan Your tour</li>
           <ul>
@@ -247,10 +247,10 @@
           </ul>
         </ul>
       </div>
-
-    <div class="privacy">
+      <div class="footer_privacy">
         <p>&copy Ethiotour Company</p>
     </div>
     </footer>
+
   </body>
 </html>

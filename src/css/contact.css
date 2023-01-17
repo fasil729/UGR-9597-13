@@ -1,0 +1,58 @@
+.header {
+    background: url("../images/Timket.jpg") no-repeat ;
+    background-size: 100% 100%;
+}
+.main_section {
+    display: flex;
+    flex-direction: row;
+    min-height: 700px;
+    justify-content: space-around;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+.main_section_message, .main_section_form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 35%;
+    box-shadow: 2px, 2px, rgba(110, 123, 156, 0.658);
+}
+
+.main_section_form input{
+    border: 1px solid gold;
+    border-color: blueviolet;
+    height: 5%;
+    padding: 5px;
+    box-shadow: 2px, 2px, rgba(110, 123, 156, 0.658);
+
+}
+/* .input_field.error input {
+    border-color: rgb(225, 70, 56);
+}
+.input_field.success input {
+    border-color: #088178;
+
+}
+.input_field .error {
+    color: rgba(226, 59, 33,0.9);
+    font-size: 9px;
+    height: 13px; */
+
+/* } */
+.input_field input:focus {
+    outline: 0;
+
+}
+button {
+    cursor: pointer;
+    height: 5%;
+}
+
+#form {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12pz;
+}
+
+
