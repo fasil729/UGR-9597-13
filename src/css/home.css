@@ -1,18 +1,60 @@
+
 .header {
     background: url("../images/dankil2.jpg") no-repeat ;
     background-size: 100% 100%;
 }
 
+figure {
+   width: fit-content;
+}
 .main_section1_catagories {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
     justify-content: space-between;
     width: 100%;
-    max-width: fit-content;
+
     flex-wrap: wrap;
-    
+    border: 1px solid;
+
 
 }
 .main_section1--float-left {
     float: left;
 }
+@media screen and (max-width: 750px) {
+    .main_section1_catagories {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0px;
+        padding: 0px;
+
+    }
+    .main .main_section1{
+        width: fit-content;
+        padding: 0px;
+        margin: 0px;
+    }
+    main {
+        border: 1px solid red;
+    }
+    figure {
+        border: 1px solid green;
+    }
+
+    }
+
+    fig img {
+
+        width: 200px;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 5%;
+
+    }
+
+}
+.main {
+    width: 100vw;
+}
+
