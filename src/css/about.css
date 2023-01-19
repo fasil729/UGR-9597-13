@@ -4,3 +4,18 @@
 
 
 }
+
+.main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 10px;
+}
+@media screen and (max-width: 980px) {
+    .main {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0px;
+        padding: 0px;
+
+    }
+}

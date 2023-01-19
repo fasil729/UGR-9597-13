@@ -8,7 +8,7 @@
     <link rel="icon" href="images/flag.png" type="image/png" />
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/contact.css">
-    <script dref src="js/index.js"></script>
+
   </head>
   <body>
     <header class="header">
@@ -17,9 +17,9 @@
         <h2 style="padding:0px;margin:0px;">Timket Ceremony</h2>
       </div>
       <nav>
-        <ul>
+        <ul class="navigation_list">
           <li>
-            <a href="home.html">HOME</a>
+            <a href="index.html">HOME</a>
           </li>
               <li><a href="cultural.html">CULATUAL EVENTS</a></li>
               <li><a href="heritage.html">HERITAGES</a></li>
@@ -28,7 +28,7 @@
             <a href="tour_operators.html">CONTACT TOUR OPERATORS</a>
           </li>
           <li>
-            <a href="contact_us.html">CONTACT US</a>
+            <a class="header_current" href="contact_us.html">CONTACT US</a>
           </li>
           <li>
             <a href="about_us.html">ABOUT US</a>
@@ -52,10 +52,10 @@
             </P>
           </div>
           <form class="main_section_form" onsubmit="return validateForm()" id="form" method="post" encoding="text/plain">
-            <label for="first_name">first_Name*</label>
+            <label for="first_name">First Name*</label>
             <br>
             <input type="text" id="first_name" name="first_name" placeholder="Enter your name" >
-            <label for="second_name">Second_Name</label>
+            <label for="second_name">Second Name</label>
             <br>
             <input type="text" id="second_name" name="second_name" placeholder="Enter your Second name">
             <label for="email">Email*</label>
@@ -67,7 +67,7 @@
             <textarea name="message" id="message" cols="30" rows="10">write your message here</textarea>
             </div>
             <br>
-            <input type="submit", value="submit", name="submit">
+            <input  class="image_button" style="display: block" type="submit", value="submit", name="submit">
             <span id="form-error"></span>
           </form>
         </section>
@@ -122,6 +122,6 @@
     </div>
 
     </footer>
-
+    <script dref src="js/index.js"></script>
   </body>
 </html>

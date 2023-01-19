@@ -43,14 +43,15 @@ function validateForm() {
     errorMessage.style.color = "green";
     errorMessage.innerHTML = 'sucessful!';
     return true;
-}
-const togglerbars= document.querySelector(".toggler-bars");
-const header__navigations= document.querySelector(".header__navigations-container__unorderd");
+};
+const togglerbars= document.getElementsByClassName("toggler-bars")[0];
+const header__navigations= document.getElementsByClassName("navigation_list")[0];
 const main = document.querySelector(".main");
 const dailymain =document.querySelector(".daily-status-main");
-togglerbars.addEventListener("click",() => {
-    togglerbars.classList.toggle("active");
-    nav.classList.toggle("active");
-    main.classList.toggle("active");
+console.log(togglerbars);
+console.log(header__navigations)
+togglerbars.addEventListener('click', function() {
+    header__navigations.classList.toggle('active');
+
 
 })

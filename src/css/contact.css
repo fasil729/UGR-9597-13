@@ -13,7 +13,7 @@
 .main_section_message, .main_section_form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    height: fix-content;
     width: 35%;
     box-shadow: 2px, 2px, rgba(110, 123, 156, 0.658);
 }
@@ -26,6 +26,12 @@
     box-shadow: 2px, 2px, rgba(110, 123, 156, 0.658);
 
 }
+@media screen and (max-width: 980px) {
+    .main_section_message, .main_section_form {
+        width: 100%;
+    }
+}
+
 /* .input_field.error input {
     border-color: rgb(225, 70, 56);
 }
@@ -50,9 +56,13 @@ button {
 
 #form {
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: rgba(172, 206, 24, 0.801);
     border-radius: 4px;
-    font-size: 12pz;
+    font-size: 12px;
+    box-shadow: 0 34px 76px rgba(77, 55, 133, 0.3);
+    height: fit-content;
 }
-
+figure {
+    width: fit-content;
+}
 
